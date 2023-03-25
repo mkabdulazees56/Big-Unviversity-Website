@@ -1,0 +1,124 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width , initial-scale=1.0">
+
+  <title>my website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/721f278eef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section class="subheader">
+    <nav>
+      <a href="index.html"> <img src="images/logo.png" alt="logo"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hidemenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="aboutus.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>Contact Us</h1>
+    </div>
+  </section>
+
+  <!-- ---------contact------- -->
+
+
+  <section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27227.19587275213!2d73.14379053267513!3d31
+    .4581952694489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922691075c289bf%3A0xd48f8a2cd3c489f8!2
+    sNational%20Textile%20University!5e0!3m2!1sen!2s!4v1666846622506!5m2!1sen!2s" width="600" height="450"
+      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </section>
+
+  <section class="contact-us">
+    <div class="row">
+      <div class="contact-col">
+        <div>
+          <i class="fab fa-facebook"></i>
+          <span>
+            <h5>National Textile University,Sheikupura Road</h5>
+            <p>Manawala,Faisalabad,Punjab</p>
+          </span>
+        </div>
+        <div>
+          <i class="fas fa-envelope"></i>
+          <span>
+            <h5>oric@ntu.edu.pk</h5>
+            <p>Email us for query</p>
+          </span>
+        </div>
+        <div>
+          <i class="fas fa-phone"></i>
+          <span>
+            <h5>+92 123456789</h5>
+            <p>Monday to Friday , 10AM to 4PM </p>
+          </span>
+        </div>
+      </div>
+      <div class="contact-col">
+        <form action="form-handler.php" method="post">
+          <input type="text" name="name" placeholder="Enter Your Name" required>
+          <input type="email" name="email" placeholder="Enter Your Email" required>
+          <input type="text" name="subject" placeholder="Enter Your Subject" required>
+          <textarea rows="8" name="message" placeholder="Enter Your Message" required></textarea>
+          <button type="submit" class="cmt-btn">Send Message</button>
+
+
+        </form>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+      nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+
+    <p>Made by ABDRTS @ 2022</p>
+  </section>
+
+  <!-- -------------------java Script------------ -->
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showmenu() {
+      navLinks.style.right = "0";
+
+    }
+    function hidemenu() {
+      navLinks.style.right = "-200px";
+    }
+
+  </script>
+  <!---------------------java Script------------ -->
+
+</body>
+
+</html>
